@@ -1,0 +1,19 @@
+{
+  "name": "@intelradar/monitors",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "dependencies": {
+    "@intelradar/supabase": "*",
+    "puppeteer": "^23.8.0",
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.0",
+    "crypto": "^1.0.1",
+    "diff": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^6.0.0",
+    "typescript": "^5.7.0"
+  }
+}
