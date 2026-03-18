@@ -1,27 +1,41 @@
-# IntelRadar
+# intelradar
 
-> AI-Powered Competitive Intelligence
+**AI-powered competitive intelligence platform**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-IntelRadar monitors your competitors and surfaces actionable intelligence. It tracks pricing changes, product launches, hiring patterns, marketing campaigns, and market positioning in real-time.
-
-## Key Features
-
-- ****
-
-## Tech Stack
-
-Python,Claude API,Scrapy,PostgreSQL,React
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/intelradar.git
-cd intelradar
-pip install -e .
+npm install
 ```
 
----
+## Quick Start
+```typescript
+import { Intelradar } from "./intelradar";
+const instance = new Intelradar()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
